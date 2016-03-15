@@ -11,6 +11,8 @@ import UIKit
 
 class EventViewController : UIViewController {
     
-    
+    var eventNumber = -1
+    var monthNumber = -1
+    var dayNumber = -1
     
 }

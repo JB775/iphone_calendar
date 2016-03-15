@@ -94,6 +94,13 @@
                             <outlet property="delegate" destination="Db9-aF-dob" id="dAb-NT-NTG"/>
                         </connections>
                     </tableView>
+                    <navigationItem key="navigationItem" title="Title" id="ufY-ps-Qru">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="I9K-ip-OVI">
+                            <connections>
+                                <action selector="addButtonPressed:" destination="Db9-aF-dob" id="HU2-Gg-eac"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="u1q-lQ-6ro" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
