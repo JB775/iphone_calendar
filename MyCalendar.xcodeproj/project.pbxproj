@@ -16,6 +16,7 @@
 		1B3D29C31C97B26D0011CBBB /* DaysTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D29C21C97B26D0011CBBB /* DaysTableViewController.swift */; };
 		1B3D29C51C97B2A70011CBBB /* SingleDayTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D29C41C97B2A70011CBBB /* SingleDayTableViewController.swift */; };
 		1B3D29C71C97B2BF0011CBBB /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D29C61C97B2BF0011CBBB /* EventViewController.swift */; };
+		1B3D29C91C989D540011CBBB /* CalendarEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B3D29C81C989D540011CBBB /* CalendarEvent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		1B3D29C21C97B26D0011CBBB /* DaysTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DaysTableViewController.swift; sourceTree = "<group>"; };
 		1B3D29C41C97B2A70011CBBB /* SingleDayTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SingleDayTableViewController.swift; sourceTree = "<group>"; };
 		1B3D29C61C97B2BF0011CBBB /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
+		1B3D29C81C989D540011CBBB /* CalendarEvent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CalendarEvent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 				1B3D29C01C97B25F0011CBBB /* MonthsTableViewController.swift */,
 				1B3D29C21C97B26D0011CBBB /* DaysTableViewController.swift */,
 				1B3D29C41C97B2A70011CBBB /* SingleDayTableViewController.swift */,
+				1B3D29C81C989D540011CBBB /* CalendarEvent.swift */,
 				1B3D29C61C97B2BF0011CBBB /* EventViewController.swift */,
 				1B3D29B51C97A7140011CBBB /* Assets.xcassets */,
 				1B3D29B71C97A7140011CBBB /* LaunchScreen.storyboard */,
@@ -153,6 +156,7 @@
 				1B3D29C31C97B26D0011CBBB /* DaysTableViewController.swift in Sources */,
 				1B3D29C11C97B25F0011CBBB /* MonthsTableViewController.swift in Sources */,
 				1B3D29C71C97B2BF0011CBBB /* EventViewController.swift in Sources */,
+				1B3D29C91C989D540011CBBB /* CalendarEvent.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
