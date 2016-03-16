@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--Months-->
@@ -117,8 +118,34 @@
                     <view key="view" contentMode="scaleToFill" id="x20-Oa-vei">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wOR-XT-hCj">
+                                <rect key="frame" x="20" y="78" width="580" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GcC-D5-N1l">
+                                <rect key="frame" x="20" y="124" width="560" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="wOR-XT-hCj" secondAttribute="trailing" constant="-20" id="G6W-N9-fWG"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcC-D5-N1l" secondAttribute="trailing" id="PhW-99-dd3"/>
+                            <constraint firstItem="GcC-D5-N1l" firstAttribute="top" secondItem="wOR-XT-hCj" secondAttribute="bottom" constant="25" id="WnS-xF-0pi"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="GcC-D5-N1l" secondAttribute="trailing" constant="518" id="hAQ-td-Y8S"/>
+                            <constraint firstItem="wOR-XT-hCj" firstAttribute="top" secondItem="4wT-TW-eIP" secondAttribute="bottom" constant="14" id="q3F-Gj-lbl"/>
+                            <constraint firstItem="wOR-XT-hCj" firstAttribute="top" secondItem="4wT-TW-eIP" secondAttribute="bottom" constant="14" id="tnz-01-zJE"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="GcC-D5-N1l" id="LgK-HA-uA5"/>
+                        <outlet property="titleLabel" destination="wOR-XT-hCj" id="9F8-1G-XYh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q8a-2p-4XU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

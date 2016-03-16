@@ -11,8 +11,15 @@ import UIKit
 
 class EventViewController : UIViewController {
     
-    var eventNumber = -1
-    var monthNumber = -1
-    var dayNumber = -1
+    var calendarEvent : CalendarEvent?
+    
+    @IBOutlet weak var titleLabel : UILabel!
+    @IBOutlet weak var dateLabel : UILabel!
+    
+    //This will load immediately so this is where we are setting some initial values
+    override func viewDidLoad() {
+        titleLabel.text = calendarEvent?.title
+        dateLabel.text = calendarEvent?.dateString
+    }
     
 }

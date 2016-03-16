@@ -110,14 +110,16 @@ class SingleDayTableViewController : UITableViewController {
     }
     
     override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        if(segue.identifier == "SingleDaySegue"){
-            let selectedRow = tableView.indexPathForSelectedRow?.row
-            if let dest = segue.destinationViewController as? SingleDayTableViewController {
-                dest.title = eventsArray[selectedRow!] as! String
-                dest.monthNumber = monthNumber
-                dest.dayNumber = selectedRow! + 1
+            //Set a variable as the row that was selected - NEED TO UNWRAP WITH THE !
+            let selectedRow = (tableView.indexPathForSelectedRow?.row)!
+            
+            if let dest = segue.destinationViewController as? EventViewController {
+                if let eventObject = eventsArray[selectedRow] as? NSData {
+                    let ce = NSKeyedUnarchiver.unarchiveObjectWithData(eventObject) as! CalendarEvent
+                    //Pass it along to destination view controller
+                    dest.calendarEvent = ce
+                }
             }
-        }
     }
 
     
